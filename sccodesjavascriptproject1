@@ -1,0 +1,9 @@
+function random(arr) {
+  // return a random item from the `arr` parameter
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+// No need to change anything below this line.
+// We're providing the variable and function call for you!
+var nouns = ["turtle", "book", "tomato"];
+random(nouns);
