@@ -1,0 +1,3 @@
+//mountNode
+
+document.getElementById('mountNode').innerHTML = 'Hello!'
