@@ -1,0 +1,44 @@
+HTML:
+
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Float</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://dashboard.sccodes.org/assets/exercise-tests.js"></script>
+    <script src="tests.js"></script>
+  </head>
+  <body>
+    <p>
+      <img src="http://placekitten.com/320/300">
+      Chew on cable mark territory, for step on your keyboard while you're gaming and then turn in a circle for paw at beetle and eat it before it gets away. Chase imaginary bugs nap all day cat not kitten around or stare at ceiling light meow to be let in and please stop looking at your phone and pet me but need to chase tail. Flee in terror at cucumber discovered on floor hide head under blanket so no one can see hide at bottom of staircase to trip human and meow to be let out licks paws. Eat and than sleep on your face jump launch to pounce upon little yarn mouse, bare fangs at toy run hide in litter box until treats are fed yet sweet beast spit up on light gray carpet instead of adjacent linoleum fall over dead (not really but gets sypathy) all of a sudden cat goes crazy, but meowzer!
+    </p>
+  </body>
+</html>
+
+***
+CSS:
+
+/* Target the img element and set its 'float' property */
+img {
+	float: left;
+  	padding: 10px;
+}
+
+**
+
+JS:
+
+// These are a few simple tests we'll run against your code.
+// They're written in JavaScript, so feel free to read these.
+// Don't worry. It's ok if you can't understand this code yet.
+// You can also ignore this file for now :)
+// I can edit this and the script tags in the html file later to add my own ish...
+
+describe("Simple Floats", function() {
+  chai.should("");
+
+  it("The image element should have its float property set", function() {
+    $("img").css("float").should.not.eq("none");
+  });
+});
