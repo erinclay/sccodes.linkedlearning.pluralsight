@@ -1,0 +1,91 @@
+HTML:
+
+<!doctype html>
+<html>
+  <head>
+    <title>Floats and Clears</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://dashboard.sccodes.org/assets/exercise-tests.js"></script>
+    <script src="tests.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cat News</h1>
+    </header>
+    <article class="clearfix">
+      <img class="left" src="http://placekitten.com/120/250">
+      <img class="right" src="http://placekitten.com/200/150">
+      Lorem ipsum dolor sit amet, appellantur deterruisset sed et, ex est habeo sonet, ex est nisl partem. Nonumy graeci appetere cum eu, utroque accusam id has. Cum dico altera instructior eu, in mei alia adhuc cetero, blandit mandamus ei eum.
+    </article>
+    <article>
+      <img class="left" src="http://placekitten.com/120/170">
+      <img class="right" src="http://placekitten.com/170/200">
+      Lorem ipsum dolor sit amet, appellantur deterruisset sed et, ex est habeo sonet, ex est nisl partem. Nonumy graeci appetere cum eu, utroque accusam id has. Cum dico altera instructior eu, in mei alia adhuc cetero, blandit mandamus ei eum. Lorem ipsum dolor sit amet, appellantur deterruisset sed et, ex est habeo sonet, ex est nisl partem. Nonumy graeci appetere cum eu, utroque accusam id has. Cum dico altera instructior eu, in mei alia adhuc cetero, blandit mandamus ei eum. Lorem ipsum dolor sit amet, appellantur deterruisset sed et, ex est habeo sonet, ex est nisl partem. Nonumy graeci appetere cum eu, utroque accusam id has. Cum dico altera instructior eu, in mei alia adhuc cetero, blandit mandamus ei eum.
+    </article>
+    <footer class="clear">
+      CatCo (C) 2017
+    </footer>
+  </body>
+</html>
+
+CSS:
+
+header,
+footer,
+section {
+  border: 2px solid #AAA;
+}
+
+.clearfix {
+  /* Elements matching this rule should employ the "clearfix hack" we discussed. */
+  overflow: auto;
+  zoom: 1;
+
+}
+
+.right {
+  /* Elements matching this rule should display on the right side of the page. */
+  float: right;
+
+}
+
+.left {
+  /* Elements matching this rule should display on the left side of the page. */
+  float: left;
+
+}
+
+.clear {
+  clear: both;
+
+  /* Elements matching this rule should be on their own row, with nothing on either side. */
+
+}
+
+JS:
+
+// These are a few simple tests we'll run against your code.
+// They're written in JavaScript, so feel free to read these.
+// Don't worry. It's ok if you can't understand this code yet.
+// You can also ignore this file for now :)
+
+describe("Page Layout with Floats", function() {
+  chai.should();
+
+  it(".left images should display on the left side of the page", function() {
+    $(".left").css("float").should.eq("left");
+  });
+
+  it(".right images should display on the right side of the page", function() {
+    $(".right").css("float").should.eq("right");
+  });
+
+  it("Each article should be on its own row (via .clearfix)", function() {
+    $(".clearfix").css("overflow").should.eq("auto");
+    $(".clearfix").css("zoom").should.eq("1");
+  });
+
+  it("The footer should be on its own row", function() {
+    $(".clear").css("clear").should.match(/both|right/);
+  });
+});
