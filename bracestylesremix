@@ -1,0 +1,31 @@
+HTML: 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test HTML</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <p>Testing the base styles so far!</p>
+    <p>Notice there's no margin on the body at all.</p>
+    <p>Feel free to change this example and make sure you know what each base style is doing :)</p>
+    <p id="para"> Base (styles) to the face. Embrace the chase. Life is just a rat race.
+  </body>
+</html>
+
+CSS:
+
+body {
+  background: #f5eee0 url(http://images.sccodes.org/images/keytar/pattern.jpg);
+  color: #6f6f6f;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 25px;
+}
+#para {
+	font-family: Courier;
+  	font-weight: bold;
+  	font-size: 42px;
+}
