@@ -1,0 +1,12 @@
+JS
+Complete each of the following tasks:
+
+
+1. Declare a variable named name.
+2. Assign your first name to the variable name.
+3. Print your name three times.
+
+var name = "Janey";
+console.log("Janey");
+console.log("Janey");
+console.log("Janey");
